@@ -20,6 +20,6 @@ RUN apk add ca-certificates
 
 COPY --from=build_stage /tmp/go-api/out/executable /app/executable
 
-EXPOSE 80
+EXPOSE 8080
 
 CMD ["/app/executable"]
