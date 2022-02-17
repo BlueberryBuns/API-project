@@ -12,7 +12,8 @@ The idea behind the command is to crate utility container used later to create p
 docker run -it --rm -v $(pwd):/go [NAME-OF-YOUR-CONTAINER] go [COMMAND(s)]
 
 # This project was generate with the command listed below 
-docker run -it --rm -v $(pwd):/go golang-util go mod init github.com/BlueberryBuns/API-project/backend/go-api
+docker run -it --rm -v $(pwd):/go golang-util go mod init \ 
+github.com/BlueberryBuns/API-project/backend/go-api
 ```
 To run golang project build image in `backend/go-api` directory and run docker container. The container is based on multi-staged image so it shall take minimal amount of space as it's outcome is based only on the `latest` image version of `alpine` Linux.
 ```bash
