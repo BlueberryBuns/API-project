@@ -1,0 +1,5 @@
+version: "3.9"
+services:
+  go-api:
+    build:
+      context: ./backend/go-api
