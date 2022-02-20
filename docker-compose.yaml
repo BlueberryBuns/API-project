@@ -1,5 +1,9 @@
 version: "3.9"
 services:
-  go-api:
+  golang:
     build:
-      context: ./backend/go-api
+      context: ./backend/utils
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./backend/go-api:/go:rw
